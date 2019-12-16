@@ -8,16 +8,22 @@ public class Main {
         theGraph.addVertex('B');//1
         theGraph.addVertex('C');//2
         theGraph.addVertex('D');//3
+        theGraph.addVertex('E');
 
         theGraph.addEdge(0, 1);
+        theGraph.addEdge(0, 3);
         theGraph.addEdge(1, 2);
         theGraph.addEdge(1, 3);
+        theGraph.addEdge(1, 4);
+        theGraph.addEdge(2, 4);
+        theGraph.addEdge(3, 4);
 
         System.out.print("Visits BFS : ");
         theGraph.BFS(); // breadth-first search
         System.out.println();
         System.out.print("Visits DFS : ");
-        theGraph.BFS(); // depth-first search
+        theGraph.DFS(); // depth-first search
         System.out.println();
+
     }
 }
